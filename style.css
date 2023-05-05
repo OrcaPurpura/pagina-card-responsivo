@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #F6F9FF;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #434342;
+}
+
+main.cards {
+  display: flex;
+  padding: 32px;
+
+}
+
+main.cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+  max-height: 468px;
+  margin-left: 32px;
+
+}
+main.cards section.card .icon {
+  width: 64px;
+  height: 64px;
+}
+
+main.cards section.card img {
+  width: 100%;
+}
+
+main.cards section.card h3 {
+  font-size: 100%;
+  margin: 16px 0;
+}
+
+main.cards section.card span {
+  font-weight: 200;
+  max-width: 240px;
+  font-size: 80%;
+  margin-bottom: 16px;
+}
+
+
+main.cards section.card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 35px;
+  border: 0;
+  cursor: pointer;
+  font-size: 70%;
+  font-weight: 700;
+  color: #fff;
+}
+
+
+/*Adicionando o gradiente nos button*/
+
+main.cards section.card.music button {
+  background: linear-gradient(to right, #029660, #4cfcbc );
+}
+
+main.cards section.card.video button {
+  background: linear-gradient(to right, #029660, #4cfcbc );
+}
+
+main.cards section.card.contat button {
+  background: linear-gradient(to right, #029660, #4cfcbc );
+}
+
+/*Adicionando o gradiente no elemento do painel*/
+
+main.cards section.card.music {
+  box-shadow: 20px 20px 50px -30px #61fac2 ;
+}
+
+main.cards section.card.video {
+  box-shadow: 20px 20px 50px -30px #61fac2 ;
+}
+
+main.cards section.card.contat {
+  box-shadow: 20px 20px 50px -30px #61fac2 ;
+}
+
+/*linha para deixar a pagina responsiva*/
+
+@media screen and (max-width: 720px) {
+  main.cards {
+    flex-direction: column;
+  }
+
+  main.cards section.card {
+    margin-left: 0;
+    margin-bottom: 32px;
+
+  }
+
+  main.cards section.card button {
+    font-size: 70%;
+
+  }
+
+}
